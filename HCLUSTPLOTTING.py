@@ -112,8 +112,7 @@ if filein:
                 top=oldylim[1] - difftop,
                 bottom=oldylim[0] + diffbot,
             )
-            st.write(difftop)
-            st.write(diffbot)
+
             for elem, axis in zip(elemstoplot, axx[:-1]):
                 axis.set_ylim(
                     axx[-1].get_ylim()
@@ -128,4 +127,3 @@ if filein:
             figx.tight_layout()
 
             st.pyplot(figx)
-            st.write(axx[-1].get_ylim())
